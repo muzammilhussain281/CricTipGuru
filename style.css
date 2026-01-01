@@ -263,33 +263,6 @@ p {
     font-size: 1rem;
 }
 
-/* Betting Odds */
-.odds-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.odd-item {
-    background: var(--light-gray);
-    padding: 12px;
-    border-radius: 8px;
-    text-align: center;
-}
-
-.odd-team {
-    font-size: 0.9rem;
-    color: var(--dark-gray);
-    margin-bottom: 5px;
-}
-
-.odd-value {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--primary);
-}
-
 /* Squads */
 .squad-container {
     display: grid;
@@ -530,8 +503,8 @@ p {
         max-width: 700px;
     }
     
-    .odds-container, .squad-container {
-        grid-template-columns: repeat(3, 1fr);
+    .squad-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 

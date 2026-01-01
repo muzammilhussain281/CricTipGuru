@@ -241,31 +241,7 @@ function loadMatches() {
                 
                 <!-- Match Details (Hidden by Default) -->
                 <div class="match-details">
-                    <!-- 1. Betting Rates -->
-                    <div class="detail-section">
-                        <h3 class="section-title">
-                            <i class="fas fa-coins"></i>
-                            Betting Rates
-                        </h3>
-                        <div class="odds-container">
-                            <div class="odd-item">
-                                <div class="odd-team">${match.details.betting.team1.name}</div>
-                                <div class="odd-value">${match.details.betting.team1.odds}</div>
-                            </div>
-                            <div class="odd-item">
-                                <div class="odd-team">${match.details.betting.team2.name}</div>
-                                <div class="odd-value">${match.details.betting.team2.odds}</div>
-                            </div>
-                            ${match.details.betting.draw ? `
-                            <div class="odd-item">
-                                <div class="odd-team">${match.details.betting.draw.name}</div>
-                                <div class="odd-value">${match.details.betting.draw.odds}</div>
-                            </div>
-                            ` : ''}
-                        </div>
-                    </div>
-                    
-                    <!-- 2. Squad -->
+                    <!-- 1. Squad (Now First) -->
                     <div class="detail-section">
                         <h3 class="section-title">
                             <i class="fas fa-users"></i>
@@ -287,7 +263,7 @@ function loadMatches() {
                         </div>
                     </div>
                     
-                    <!-- 3. Pitch Report -->
+                    <!-- 2. Pitch Report -->
                     <div class="detail-section">
                         <h3 class="section-title">
                             <i class="fas fa-baseball-ball"></i>
@@ -313,7 +289,7 @@ function loadMatches() {
                         </div>
                     </div>
                     
-                    <!-- 4. Weather -->
+                    <!-- 3. Weather -->
                     <div class="detail-section">
                         <h3 class="section-title">
                             <i class="fas fa-cloud-sun"></i>
@@ -339,7 +315,7 @@ function loadMatches() {
                         </div>
                     </div>
                     
-                    <!-- 5. Head to Head -->
+                    <!-- 4. Head to Head -->
                     <div class="detail-section">
                         <h3 class="section-title">
                             <i class="fas fa-trophy"></i>
